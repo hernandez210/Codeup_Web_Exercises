@@ -1,0 +1,57 @@
+
+body{
+	color:salmon;
+	text-decoration: line-through;
+}
+
+p {
+	color: magenta;
+text-decoration: underline;
+}
+.cohort-name
+
+
+.fancy-header {
+    color: blue;
+    text-decoration: underline;
+
+#username{
+	font-family: papyrus;
+}
+h1{
+	color: red;
+}
+<p>{
+	color: yellow	
+}
+.classname {
+	color: "orange";
+}
+
+.no-hilight{
+	color: black;
+}
+object-element-modify
+
+h1.fancy-header {
+	color:blue;
+} 
+/* unvisited link (:link) */
+a:link {
+    color:red;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color:black;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color:blue;
+}
+
+/* active/selected link (:active) */
+a:active {
+    color:green;
+}

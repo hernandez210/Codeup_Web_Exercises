@@ -1,0 +1,61 @@
+h1, h2 {
+	color: green;
+	text-decoration: underline;
+	padding: 10px;
+	border: 10px dotted;
+	margin: 10px;
+}
+body {
+	background-image: url(/img/skull.jpg);
+	background-color: green;
+	background-repeat: repeat;
+	background-position: center;
+	background-image:  
+	padding: 30px;
+	border: 60px;
+	width: 400px;
+}
+li {
+	color: green;
+}
+
+
+
+
+ul {
+	list-style: square;
+	background-color: white;
+	margin: 10px;
+}
+ol {
+	list-style: upper-alpha;
+}
+body {
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+body { 
+	color: yellow;
+	font-weight: bold;
+}
+table {
+text-decoration: underline;
+}
+tr {
+	text-decoration: overline;
+}
+a:link {
+	color:red;
+}
+a:visited {
+	color:black;	
+}
+a:hover {
+	color:blue;
+}
+a:active {
+	color:green;
+}
+
+
+
+

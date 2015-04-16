@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1 {
+	border: solid;
+}
+.red {
+	background-color: red;
+}
+.blue	{
+	background-color: blue;
+	height: 100px;
+	width: 200px;
+}
+.starbox {
+	height: 40px;
+	width: 10px;
+	padding: 5px;
+	background-color: blue;
+}
+
+div {
+	height: 10px;
+	width: 5px;
+	margin-top: 10px;
+}
+body {
+border: solid;
+}

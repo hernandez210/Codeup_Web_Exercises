@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}h1 {
+	font-weight: bold;
+	text-align: center;
+}
+.white {
+	height: 500px;
+	width: 75px;
+	color: white;
+	border: solid;
+}
+.red {
+	height: 200px;
+	width: 200px;
+	border: solid;
+	position: absolute;
+	top: 225px;
+	left: 625px;
+	border-radius: 100px;
+	background-color: red;
+body {
+	background-color: black;
+}

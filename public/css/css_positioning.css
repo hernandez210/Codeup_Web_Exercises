@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h2, h1 {
+	color: blue;
+	text-align: center;
+}
+
+.boxA {
+	background-color: rgb(238, 230, 27);
+	float: left;
+
+}
+.boxB {
+	background-color: orange;
+	float: left;
+}
+.boxC {
+	background-color: rgb(203, 203, 43);
+	float: left;
+	
+}	
+.boxD {
+	background-color: green;
+	float: left;
+	
+}
+.boxE {
+	background-color: rgb(238, 230, 27);
+	float: left;
+}
+.boxF{
+	background-color: rgb(212, 200,15);
+	float: left;
+	
+}
+div {  
+	border: 1px solid;
+	margin: 50px;
+	padding: 10px;
+	text-indent: 10px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+    box-shadow: 10px 10px 5px #888888;
+	width: 72px;
+	height: 72px;
+	position: relative;   
+}
+header {
+	margin-top: 50px;
+}
+
+a:visited {
+	color: yellow;
+}
+a:link {
+	color: white;
+}
+a:active {
+color: red;	
+}
+a:hover {
+	color: blue;
+}
+.row {
+	position: relative;
+	clear: both;
+}
+.ribbon {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.arrow {
+	position: absolute;
+  	top: -30px;
+  	left: 50px;
+
+}
+
+
