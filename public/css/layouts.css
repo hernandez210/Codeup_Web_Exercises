@@ -1,0 +1,36 @@
+
+nav {
+	text-align: center;
+	display: inline;
+	}
+#topnav {
+	
+		}
+a:hover{
+	color: black;
+		}		
+body 	{
+background-color: rgb(225, 225, 225);
+		}
+aside 	{
+	
+		}
+img 	{
+
+		}
+.home	{
+	color: blue;
+		}
+.sidenav {
+
+		}	
+footer {
+	text-align: center;
+	display: inline;
+		}   
+.inline > li {
+	display: inline;
+}
+.container {
+	border: 3px solid yellow;
+}

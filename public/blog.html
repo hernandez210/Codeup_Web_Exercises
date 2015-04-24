@@ -1,55 +1,93 @@
-<!DOCTYPE html>
-	<head>
-		<title>Blog</title>
-		<link rel="stylesheet" type="text/css" href="/css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="/css/blog.css">
-	</head>
-	<body>
-		<header>
-			Blog Page
-		</header>
-		<main>
-			<h2>Navigation</h2>
-				<ol>
-					<li>
-						<a href="#">Home</a>
-					</li>
-					<li>	
-						<a href="#">body</a>
-					</li>
-					<li>	
-						<a href="#">contact us</a>
-					</li>
-					<li>
-						<a href="#">Google</a>
-					</li>
-					<li>
-						<a href="#">bottom</a>
-					</li>
-				</ol>
-		</main>
-		<section>
-			<h3>Here is My Opinion</h3>
-		</section>
-			<main>
-				<h3>The good things in life</h3>
+<!DOCTYPE HTML>
+		<head>
+			<title>Blog</title>
+			<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+			<link rel="stylesheet" type="text/css" href="/css/grids.css">
+			<link rel="stylesheet" type="text/css" href="/css/blog.css">
+		</head>
+		<body>
+			<div class="container" id="top">
+				<div class="row">
+					<div class="column one">
+			 			<header>
+							<h1>Hector's Blog Page</h1>
+								 <ol>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Body</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Google</a></li>
+									<li><a href="#bottom">Bottom</a></li>
+								</ol>
+						</header>
+					</div>
+				</div>
+			</div>
+
+			 <div class="column one-fourth" id="form"><p>
+				<form method="GET" action="#">		
+					<label for="username">Username: </label>
+					<input type="text" name="username" placeholder="username" id="username">
+				</p>
+				<p>
+					<label for="password">Password:</label>
+					<input type="password" name="password" placeholder="password">
+				</p>
+				<p>
+					<textarea name="comment" placeholder="This is my comment"></textarea> <br>
+					<p>Codeup awesome?</p> 
+					<Label> Yes <input type="radio" value="of course" name="codeup_awesome" checked="checked"></label>
+					<Label> SI <input type="checkbox" value="of course" name="codeup_awesome" checked="checked></label>
+				<p><input type="submit"></p>
+			</p>
+		</div>
+		<div class="column one-half red" id="codeup">
+			<h3>Codeup:</h3>
 					<section>
-						<article>
-							<p>
-								Life is good because we get a new shot everday.
-							</p>
-						</article>
-						<article>
-							<p>
-								Life teaches us to get up when we fall.
-							</p>
-						</article>
 						<article> 
 							<p>
-								The past is history and we need learn to forget and forgive.
+								Codeup is kicking my A** and I am loving it.<br>Three weeks in and I feel like a champ.
+							</p>
+							<p>
+								Codeup keeps kicking my ass and I dont seem to mind.
 							</p>
 						</article>
-				</section>		
-			</main>
+					</section>
+				<aside>
+					<img src="/img/mexico.jpeg">
+				</aside>
+			</div>
+			 <div class="column one-fourth" id="opinion">
+			 	<main>
+					<h3>Here is My Opinion:</h3>
+						<section>
+							<article>
+								<p>
+									Life is good because we get a new shot everday.
+								</p>
+								<p>
+									Today is a good day. I can hear the noise from Fiesta river parade.
+								</p>
+							</article>
+							<article>
+								<p>
+									Life teaches us to get up when we fall.<br>
+									If you get up when you fall then you deserve to succeed.
+								</p>
+							</article>
+						</section>
+				</main>
+			</div> 	
 		</body>
+			<div class="column one" id="bottom">
+			 <footer>
+				<h1>Copy Rights 2015.</h1>
+					<ol>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Body</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Google</a></li>
+						<li><a href="#top">Bottom</a></li>
+					</ol>
+			</div>			
+		</footer>
 	</html>

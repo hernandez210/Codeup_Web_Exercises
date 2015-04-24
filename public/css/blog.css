@@ -1,9 +1,36 @@
-h1 {
-	font-weight: bold;
+html {
+	
 }
-body {background-color: red;
-	color: yellow;
-	background-image: url(/img/skull.jpg);
-	background-image:
+img	{
+	width: 570px;
+	height: 355px;
+}
+#top {
+	background-color: #2AEFCB;
+}
+#form {
+	background-color: green;
+	height: 500px;
+}
+#codeup {
+	background-color: white;
+	border: 3px solid yellow;
+	height: 500px;
+}
+#opinion {
+	background-color: red;
+	height: 500px;
+h1 {
+	color: red;
 	}
-
+header {
+	text-align: center;
+}
+.column one {
+	text-align: center;
+	display: inline;
+	background-color: #2AEFCB;
+}	
+header> ol > li { 
+	display: inline;
+}
