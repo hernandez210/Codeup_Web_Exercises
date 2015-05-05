@@ -12,10 +12,8 @@ h2, h1 {
 	width: 150px;
 	margin-left: 600px;
 }
-
 .boxA {
 	background-color: rgb(238, 230, 27);
-
 }
 .boxB {
 	background-color: orange;
@@ -32,7 +30,8 @@ h2, h1 {
 .boxE {
 	background-color: rgb(238, 230, 27);
 	margin-left: 120px;
-}.boxF{
+}
+.boxF{
 	background-color: violet;
 	margin-left: 150px;
 }

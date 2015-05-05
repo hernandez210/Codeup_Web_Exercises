@@ -1,34 +1,28 @@
-
-body{
+body {
 	color:salmon;
 	text-decoration: line-through;
 }
-
 p {
 	color: magenta;
 text-decoration: underline;
 }
 .cohort-name
-
-
 .fancy-header {
     color: blue;
     text-decoration: underline;
-
-#username{
+#username {
 	font-family: papyrus;
 }
-h1{
+h1 {
 	color: red;
 }
-<p>{
+<p> {
 	color: yellow	
 }
 .classname {
 	color: "orange";
 }
-
-.no-hilight{
+.no-hilight {
 	color: black;
 }
 object-element-modify

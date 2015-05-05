@@ -1,5 +1,5 @@
-"use strict"
-
-
-console.log("Hello from External JavaScript");
+(function () {
+	"use strict"
+		console.log("Hello from External JavaScript");
+});	
 

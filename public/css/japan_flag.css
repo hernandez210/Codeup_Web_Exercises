@@ -3,7 +3,8 @@ html {
 }
 *, *:before, *:after {
     box-sizing: inherit;
-}h1 {
+}
+h1 {
 	font-weight: bold;
 	text-align: center;
 }
