@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Defuse the BOM</title>
+    <title id="yellow">Defuse the BOM</title>
 </head>
-<body>
-    <h2 id="message">This BOM will self destruct in <span id="timer">5</span> seconds...</h2>
+  <body id="death-star">
+    <h2 id="message">This BOM will kill YOU in <span id="timer">5</span>...</h2>
 
     <button id="defuser">Defuse the BOM</button>
 
     <script>
-
         // TODO: This function needs to be called once every second
         var detonationTimer = 5;
         var interval = 1000;
         var ClickCounter = 5;
 
+        var yellowTitle = document.getElementById("message");
+        yellowTitle.style["color"] = "yellow"; 
+        yellowTitle.style["font-size"] = "100px";
+        yellowTitle.style["text-align"] = "center";
+
+        var moveClicker = document.getElementById("defuser");
+        moveClicker.style["position"] = "relative";
+        moveClicker.style["top"] = "35px";
+        moveClicker.style["left"] = "500px"; 
+        moveClicker.style["height"] = "85px";
+        moveClicker.style["border-radius"] = "50px";
+        moveClicker.style["background-color"] = "salmon";
+
+        var deathstar = document.getElementById("death-star");
+        deathstar.style["background-image"] = "url(/img/Deathstar.jpg)";
+
         function updateTimer()
              {
             if (detonationTimer == 0) {
                 alert('EXTERMINATE!');
-                document.body.style["background-color"] = "red";
-            } else if (detonationTimer > 0) {
+                document.body.style["background-image"] = "url(/img/skull.jpg)";
+            } else if (detonationTimer > 0)
+            
+            // var image1 = new Image()
+            // image1.src =="/img/skull.jpg";
+
+
+             {
                 document.getElementById('timer').innerHTML = detonationTimer;
+                document.body.style["background-color"] = "green";
             }
 
             detonationTimer--;

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+	<html>
+	<head>
+		<title>Maps</title>
+			<style type="text/css">
+	  			#map-canvas {
+	    		width: 1125px;
+	    		height: 500px;
+  			}
+  			</style>
+	</head>
+	<body>
+		<div id="map-canvas"></div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCtibGbjcuEZialyk0sccC944HUpG2bC0"></script>
+		  <!-- Script to show address on map -->
+		<script type="text/javascript">
+		 function initialize () {
+		  var mapOptions = {
+		      // Set the zoom level
+		      zoom: 18,
+		      // This sets the center of the map at our location
+		      center: { lat: 29.4284595, lng:  -98.492433 }
+		    }};
+		    // Render the map
+		    var map = new google.maps.Map(document.getElementById("map-canvas"), initialize);
+		 	var chamadres = "18318 Sonterra place, San Antonio, Texas, 78258";
+		 	var chami = { lat: 29.6101908, lng: -98.49775979999998};
+		 	var spaghettiaddress = "1126 East Houston st., San Antonio, Texas, 78205";
+		 	var spaghetti = { lat: 29.425088, lng: -98.479711};
+		 	var chilaquil = { lat: 29.424950, lng: -98.490887};
+ 		 	// Init geocoder object
+			var geocoder = new google.maps.Geocoder();
+			// Geocode our address
+			geocoder.geocode( { "address": chamadres}, function(results, status) {
+			  // Check for a successful result
+			  if (status == google.maps.GeocoderStatus.OK) {
+			    // Set our map options
+			    var mapOptions = {
+			      // Set the zoom level
+			      zoom: 10,
+			      // This sets the center of the map at our location
+			      center: results[0].geometry.location
+			    }
+			    // Render the map
+			var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+			    // Add the marker to our existing map
+		   	var markerCha = new google.maps.Marker({
+		      	position: chami,
+		      	map: map,
+		    	});
+		  	var markerSpa = new google.maps.Marker({
+		      	position: spaghetti,
+		      	map: map
+		    	});
+		   	var markerChi = new google.maps.Marker({
+		      	position: chilaquil,
+		      	map: map
+		    	});
+			
+			var bikeLayer = new google.maps.BicyclingLayer();
+ 				bikeLayer.setMap(map);
+				google.maps.event.addDomListener(window, 'load', initialize);
+		    	 // Create a new infoWindow object with content
+			    var infowindowCha = new google.maps.InfoWindow({
+			        content: '<h1>This place ROCKS!!</h1>'
+			    });
+			    var infowindowSpa = new google.maps.InfoWindow({
+			        content: '<h1>Best Spaghetti EVER!!</h1>'
+			    });
+			    var infowindowChi = new google.maps.InfoWindow({
+			        content: '<h1>Tacos??</h1>'
+			    });
+
+			    // Open the window using our map and marker
+			  	infowindowCha.open(map,markerCha);
+			  	infowindowSpa.open(map,markerSpa);
+			  	infowindowChi.open(map,markerChi);
+			  //  else {
+			  //   // Show an error message with the status if our request fails
+			  //   alert("Geocoding was not successful - STATUS: " + status);
+			  // }
+			  console.log(results);
+			  console.log(status);
+			  // google.maps.event.addListener("click", markerChi, function () {
+			  // 	infowindow,open(map, markerChi);
+
+			  // });
+}});
+		  </script>
+</body>
+
+	</html>

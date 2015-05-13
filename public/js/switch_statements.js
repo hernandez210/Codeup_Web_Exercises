@@ -24,5 +24,6 @@ switch (color) {
         break;
     default:
        message = "I know nothing those colors.";
-}
-});
+};
+
+

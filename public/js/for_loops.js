@@ -1,6 +1,6 @@
 (function () {
 "use strict";
-	for (var i = 0; i < 10 4;) {
+	for (var i = 0; i < 10; i++) {
     	console.log('for loop iteration #' + i);
 }
 	var response = prompt('What is your favorite color?');
