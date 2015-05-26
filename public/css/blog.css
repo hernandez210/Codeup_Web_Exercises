@@ -1,36 +1,43 @@
-html {
-	
-}
+/*This is CSS for the Blog page*/
 img	{
 	width: 570px;
 	height: 355px;
 }
+/* selector for id top */
 #top {
 	background-color: #2AEFCB;
 }
+/* selector for id form */
 #form {
 	background-color: green;
 	height: 500px;
 }
+/* selector for id codeup */
 #codeup {
 	background-color: white;
 	border: 3px solid yellow;
 	height: 500px;
 }
+/* selector for id opinion */
 #opinion {
 	background-color: red;
 	height: 500px;
+}
+/* selector for class="red" */
 h1 {
 	color: red;
-	}
+}
+/* selector for header elements */
 header {
 	text-align: center;
 }
+/* selector for class="column one" */
 .column one {
 	text-align: center;
 	display: inline;
 	background-color: #2AEFCB;
 }	
+/* selector for header elements and its children (ol) and its children (li) */
 header> ol > li { 
 	display: inline;
 }

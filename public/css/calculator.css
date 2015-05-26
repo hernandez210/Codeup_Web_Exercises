@@ -1,13 +1,12 @@
+/* selector for id="numbers" */
 #numbers {
 	margin-top: 15px;
 	margin-left: 125px;
 	font-size: 50px;
 	text-align: center;
 }
+/* selector for header elements */
 header {
 	font-size: 75px;
 	text-align: center;	
 }
-/*main {
-	width: 50px;
-}*/

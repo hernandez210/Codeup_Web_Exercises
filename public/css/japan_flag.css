@@ -1,19 +1,24 @@
+/* selector for all (html) elements */
 html {
     box-sizing: border-box;
 }
+/* selector for box-sizing */
 *, *:before, *:after {
     box-sizing: inherit;
 }
+/* selector for h1 elements */
 h1 {
 	font-weight: bold;
 	text-align: center;
 }
+/* selector for class="white" flag background */
 .white {
 	height: 500px;
 	width: 75px;
 	color: white;
 	border: solid;
 }
+/* selector for class="red */
 .red {
 	height: 200px;
 	width: 200px;
@@ -23,6 +28,8 @@ h1 {
 	left: 625px;
 	border-radius: 100px;
 	background-color: red;
+}
+/* selector for the body elements */
 body {
 	background-color: black;
 }

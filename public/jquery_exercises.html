@@ -1,72 +1,119 @@
 <!DOCTYPE HTML>
   <html>
     <head>
-        <title>jQuery_Exercises</title>
-        
+        <title>jQuery_Exercises</title> 
     </head>
     <body>
     	<h1 id="jqueryPara">jQuery is COOL!!!</h1>
-    	<p class="odd">
-    		In this assignment we are learnig how to target the element by its id using the jQuery language. Just like CSS we can target the ids, classnames, and even tagnames.
-    		<ul><h2>Steps to Target IDs</h2>
-    			<li>$("#id");</li>
-    			<li>$('document').ready(function(){ });</li>
-    			<li>$('document').ready(function() { var contents = $('#codeup').html(); alert(contents);});</li>
-    		</ul>
-       <div>
-       	<p class="even">
-       		This paragraph is about targeting elements by their class. whith jquery you just pass on the new value like innerhtml. 
-       		$("#jqueryPara").html("New Content").css({
-       		"color": "#222",
-       		"text-decoration": "underline",
-       		"border": "1px solid #111" });
-    	</p>
-       </div>
-       <p>
-       	this paragraph is about multiple selectors. all the even and li items $("li.even").css("border", "1px solid red");
-       	$(".even.li").
-       	to write a selector that only targets a single element on a page
-       	$(".even + .odd").css("border", "1px solid red");.
-       	$("*").css("font-family", "Georgia"); 
+    		<p class="odd">
+	    		In this assignment we are learnig how to target the element by its id using the jQuery language. Just like CSS we can target the ids, classnames, and even tagnames.
+	    		<ol>
+	    			<h2>Steps to Target IDs</h2>
+		    			<li>$("#id");</li>
+		    			<li>$('document').ready(function(){ });</li>
+		    			<li>$('document').ready(function() { var contents = $('#codeup').html(); alert(contents);});</li>
+	    		</ol>
+	       	<div>
+	       	<p class="even">
+	       		This paragraph is about targeting elements by their class. whith jquery you just pass on the new value like innerhtml. 
+	       		$("#jqueryPara").html("New Content").css({
+	       		"color": "#222",
+	       		"text-decoration": "underline",
+	       		"border": "1px solid #111" });
+	    	</p>
+	       	</div>
+	    	<p>
+			    this paragraph is about multiple selectors. all the even and li items $("li.even").css("border", "1px solid red");
+		       	$(".even.li").
+		       	to write a selector that only targets a single element on a page
+		       	$(".even + .odd").css("border", "1px solid red");.
+		       	$("*").css("font-family", "Georgia"); 
+    		</p>	
+	    	<p>
+		       	to select events all you have to do is:
+		       	$("*").click(function() {
+		       	$(this).css("border", "3px solid green");
+		       });
+	    	</p>
+	   		<p> 
+	   		The document.ready tag is used whenyou want the page to load first before jquery starts checking.The $ sign represents the jQuery(). So now you can just use $(). the cool thing about calling selectors is that is the samething as in CSS. $("#idname). var heading = ("#codeup") instead of var heading = document.getElementById("codeup"). To add an event inJquery all you have to add is .click ex: $("#codeup").click(function() {
+	       	console.log("h1 with id "codeup" was clicked");. the doubleclick is .dblclick. <br>The .hover fuction had an in and out the way the code goes is .hover(function() {
+	       	console.log("this");
+	       	$(this).css("background-color", "#FF0)");. 
+	       },
+	       function() {
+	       	$(this).css("backgroung-color", "#FF4");}. <br>
+	       	JS bin is a website that lets you test JS online.
+	       	Anytime a jQuery is function needs to be wrapped in jQuery.
+			$("#codeup").on("click", funciton() {
+
+		});<br>
+		</p>
+		<p>
+			Keyboard events: .keydown, .keypress, .keyup. <br>
+			$('#textfield').keyup(function() {
+                alert('.keydown() event fired');
+            });
+            var h1 = ("#codeup").html(put the changes to html in here);
+            alert("h1");
+            $(".important").addClass/.removeClass("highlighted");
+            .toggleClass can either add a class or take it away. Turns it on or off. If you altering the HTML document use this addClass or removeClass. 
+            create new file 
+            write 10 questions about national parks us a definition
 
 
-
-
-       </p>	
-    	<script src="js/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript">
-        $("*").css("font-family", "Georgia")
-        .css("border", "5px solid yellow")
-        .css("color", "red").css("text-decoration", "underline")
-        .css("text-align", "center");
-        // 	$(document).ready(function () {
-        // 		var paragraphContent = $(".odd")
-        // 		.css("color", "#222")
-        // 		.css("text-decoration", "underline")
-        // 		.css("border", "1px solid #111");
-        //   		console.log("paragraphContent");
-        // 	});
-        // 	$(".odd").css("background-color", "rgb(211, 212, 255)");
-        // 	$(".even").css("background-color", "rgb(200, 400, 255)");
-        // 	$("#jqueryPara").html("jQuery is Awesome").css({
-        // 		"color": "yellow",
-        // 		"background-color": "red",
-        // 		"border": "2px dashed #111"
-        // 	});
-        // 	$('document').ready(function() {
-        //     	$("li").css('font-size', '20px');
-        // 	});
-        // 	$('document').ready(function() {
-        //     	$("h2").css('font-size', '32px');
-        // 	});
-	       //  $('document').ready(function() {
-	       //      $("h1").css('font-size', '62px');
-	       //  $('document').ready(function() {
-	       //      $("p").css('font-size', '22px').css({
-	       //      	"color": "#444"
-	       //      });
-	       //  });
-        // });
+        });
+		</p>	
+<script src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+        
+        $("*")
+        	.css("font-family", "Georgia")
+	        .css("border", "5px solid yellow")
+	        .css("color", "red").css("text-decoration", "underline")
+	        .css("text-align", "center");
+        
+        $("p").dblclick(
+        	function() {
+       			$(this).css("font-size", "30px");
+       		});
+         $("h1").click(
+         	function() {
+       			$(this).css("border", "3px solid black")
+       				.css("background-color", "salmon");
+       		});
+         $("li").hover(
+         	function() {
+       			$(this).css("background-color", "#A80003");
+	    	},
+	    	function() {
+	       		$(this).css("background-color", "#FFF");
+       		});
+        $(document).ready(
+        	function() {
+    			var paragraphContent = $(".odd")
+		    		.css("color", "#222")
+		    		.css("text-decoration", "underline")
+		    		.css("border", "1px solid #111");
+		      			console.log("paragraphContent");
+		    });
+    	$(".odd").css("background-color", "rgb(211, 212, 255)");
+    	$(".even").css("background-color", "rgb(200, 400, 255)");
+    	$("#jqueryPara").html("jQuery is Awesome").css({
+        		"color": "yellow",
+        		"background-color": "red",
+        		"border": "2px dashed #111"
+        });
+        $("li")
+        	.css('font-size', '25px');
+        $("h2")
+        	.css('font-size', '32px');
+        $("h1")
+        	.css('font-size', '62px');
+        $("p")
+        	.css('font-size', '22px')
+        	.css({"color": "#444"
+	    });
         </script>	
     </body>
 </html>

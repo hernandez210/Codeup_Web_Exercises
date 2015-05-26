@@ -6,26 +6,27 @@ html {
 }
 h1 {
 	border: solid;
-	text-align: center;
 }
 .red {
 	background-color: red;
-	height: 25px;
-  	width: 1400px;
 }
-.white	{
-	background-color: white;
-	height: 25px;
-  	width: 1400px;
+.blue	{
+	background-color: blue;
+	height: 100px;
+	width: 200px;
 }
 .starbox {
-	height: 175px;
-	width: 600px;
+	height: 40px;
+	width: 10px;
 	padding: 5px;
 	background-color: blue;
-	position: absolute;
-	top: 65px;
 }
 
-
-
+div {
+	height: 10px;
+	width: 5px;
+	margin-top: 10px;
+}
+body {
+	border: solid;
+}

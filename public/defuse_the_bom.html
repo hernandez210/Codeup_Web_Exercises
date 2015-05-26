@@ -1,72 +1,61 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-    <title id="yellow">Defuse the BOM</title>
-</head>
-  <body id="death-star">
-    <h2 id="message">This BOM will kill YOU in <span id="timer">5</span>...</h2>
+    <head>
+        <title id="yellow">Defuse the BOM</title>
+    </head>
+    <body id="death-star">
+        <h2 id="message">This BOM will kill YOU in <span id="timer">5</span>...</h2>
+        <button id="defuser">Defuse the BOM</button>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script>
+            // TODO: This function needs to be called once every second
+            var detonationTimer = 5;
+            var interval = 1000;
+            var ClickCounter = 5;
+            // This is the css the effects the alert message, the defuser button, and the background-image
+            $("#message")
+            .css("color", "yellow")
+            .css("text-align", "center")
+            .css("font-size", "100px");
 
-    <button id="defuser">Defuse the BOM</button>
+            $("#defuser")
+            .css("position", "relative")
+            .css("top", "35px")
+            .css("left", "500px")
+            .css("height", "85px")
+            .css("border-radius", "50px")
+            .css("background-color", "salmon");
 
-    <script>
-        // TODO: This function needs to be called once every second
-        var detonationTimer = 5;
-        var interval = 1000;
-        var ClickCounter = 5;
-
-        var yellowTitle = document.getElementById("message");
-        yellowTitle.style["color"] = "yellow"; 
-        yellowTitle.style["font-size"] = "100px";
-        yellowTitle.style["text-align"] = "center";
-
-        var moveClicker = document.getElementById("defuser");
-        moveClicker.style["position"] = "relative";
-        moveClicker.style["top"] = "35px";
-        moveClicker.style["left"] = "500px"; 
-        moveClicker.style["height"] = "85px";
-        moveClicker.style["border-radius"] = "50px";
-        moveClicker.style["background-color"] = "salmon";
-
-        var deathstar = document.getElementById("death-star");
-        deathstar.style["background-image"] = "url(/img/Deathstar.jpg)";
-
-        function updateTimer()
-             {
-            if (detonationTimer == 0) {
-                alert('EXTERMINATE!');
-                document.body.style["background-image"] = "url(/img/skull.jpg)";
-            } else if (detonationTimer > 0)
-            
-            // var image1 = new Image()
-            // image1.src =="/img/skull.jpg";
-
-
-             {
-                document.getElementById('timer').innerHTML = detonationTimer;
-                document.body.style["background-color"] = "green";
+            $("#death-star")
+            .css("background-image", "url(/img/Deathstar.jpg)");
+            // This function is used for when the countdown  is 0 then the background-image changes to the skull
+            function updateTimer() {
+                console.log("it runs");
+                if (detonationTimer == 0) {
+                    $("body").css("background-image", "url(/img/skull.jpg)");
+                } else if (detonationTimer > 0) {
+                    console.log(detonationTimer); 
+                    $('#timer').text(detonationTimer - 1);
+                } 
+                detonationTimer--;
+            };
+            // This timeout function is used to clear all effects if the defuser button is clicked
+            var timeoutID = setInterval(updateTimer, interval);
+            // TODO: When this function runs, it needs to
+            // cancel the interval/timeout for updateTimer()
+            function defuseTheBOM() {
+                if (ClickCounter < 5) {
+                } else {
+                    clearInterval(timeoutID);
+                }
             }
-
-            detonationTimer--;
-        };
-         var timeoutID = setInterval(updateTimer, interval);
-
-        // TODO: When this function runs, it needs to
-        // cancel the interval/timeout for updateTimer()
-        function defuseTheBOM()
-        {
-            if (ClickCounter < 5) {
-                // move box
-        } else {
-            clearInterval(timeoutID);
-    }
-}
-        // Don't modify anything below this line!
-        //
-        // This causes the defuseTheBOM() function to be called
-        // when the "defuser" button is clicked.
-        // We will learn about events in the DOM lessons
-        var defuser = document.getElementById('defuser');
-        defuser.addEventListener('click', defuseTheBOM, false);
-    </script>
-</body>
+            // Don't modify anything below this line!
+            //
+            // This causes the defuseTheBOM() function to be called
+            // when the "defuser" button is clicked.
+            // We will learn about events in the DOM lessons
+            $("#defuser").click(defuseTheBOM)
+            .css("border", "5px solid black");
+        </script>
+    </body>
 </html>

@@ -1,45 +1,50 @@
+/* selector for the body element */
 body {
 	margin: 0;
 }
-
+/* selector for all the elements in the (html) page */
 html {
     box-sizing: border-box;
 }
+/* selector for box sizing*/
 *, *:before, *:after {
     box-sizing: inherit;
 }
+/* selector for all heading elements */
 h2, h1 {
 	color: blue;
 	text-align: center;
 }
-
+/* selector for class="boxA" */
 .boxA {
 	background-color: rgb(238, 230, 27);
 	float: left;
-
 }
+/* selector for class="boxb" */
 .boxB {
 	background-color: orange;
 	float: left;
 }
+/* selector for class="boxc" */
 .boxC {
 	background-color: rgb(203, 203, 43);
 	float: left;
-	
 }	
+/* selector for class="boxD" */
 .boxD {
 	background-color: green;
 	float: left;
-	
 }
+/* selector for class="boxE" */
 .boxE {
 	background-color: rgb(238, 230, 27);
 	float: left;
 }
+/* selector for class="boxF" */
 .boxF{
 	background-color: rgb(212, 200,15);
 	float: left;
-	
+/* selector for (div) elements*/
 }
 div {  
 	border: 1px solid;
@@ -54,31 +59,38 @@ div {
 	height: 72px;
 	position: relative;   
 }
+/* selector for the (header) elements */
 header {
 	margin-top: 50px;
 }
-
+/* selector for vistited links*/
 a:visited {
 	color: yellow;
 }
+/* selector for unvisited links */
 a:link {
 	color: white;
 }
+/* selector for active links */
 a:active {
 color: red;	
 }
+/* selector for hovering */
 a:hover {
 	color: blue;
 }
+/* selector for class="row" */
 .row {
 	position: relative;
 	clear: both;
 }
+/* selector for class="ribbon" */
 .ribbon {
 	position: absolute;
 	top: 0;
 	right: 0;
 }
+/* selector for class="arrow" */
 .arrow {
 	position: absolute;
   	top: -30px;

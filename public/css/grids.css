@@ -1,46 +1,59 @@
+/* selector for all (html) elements */
 html {
     box-sizing: border-box;
 }
+/* selector for box-sizing */
 *, *:before, *:after {
     box-sizing: inherit;
 }
+/* selector for class="column" and its children(row) */
 .column > .row {
 	margin-left: -10px;
 	margin-right: -10px;
 }
+/* selector for class="contaier" */
 .container {
     margin: 0 auto;
     max-width: 1200px;
     }
+/* selector for class="row" and everything after it */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+/* selector for class="column" */
 .column {
     float: left;
     padding left: 10px;
     padding-right: 10px;
     width: 100%;
 }
+/* selector for class="column one" */
 .column.one {
 	width: 100%;
 }
+/* selector for class="column one third" */
 .column.one-third {
     width: 33.33%;
 }
+/* selector for class="column one half" */
 .column.one-half {
     width: 50%;
-}    
+}
+/* selector for class="column one fourth" */ 
 .column.one-fourth{
 	width: 25%;
 }
+/* selector for class="column three fourth" */
 .column.three-fourth {
 	width:75%;
 }
+/* selector for class="column one sixth" */
 .column.one-sixth{
 	width: 16%;
 }
+/* selector for class="column one eighth" */
 .column.one-eighth{
 	width: 12%;
 }

@@ -1,10 +1,13 @@
+/* selector for the h1 elements */
 h1 {
 	color: blue;
 }
+/* selector for the main elements */
 main {
 	text-decoration: underline;
 }
-body{
+/* selector for the body elements */
+body {
  background-color: blue;
  color: yellow;
 }

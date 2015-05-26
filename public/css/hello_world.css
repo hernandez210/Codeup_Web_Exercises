@@ -1,3 +1,4 @@
+/* selector for elements in the Headings */
 h1, h2 {
 	color: green;
 	text-decoration: underline;
@@ -5,6 +6,7 @@ h1, h2 {
 	border: 10px dotted;
 	margin: 10px;
 }
+/* selector for the body element */
 body {
 	background-image: url(/img/skull.jpg);
 	background-color: green;
@@ -14,44 +16,45 @@ body {
 	padding: 30px;
 	border: 60px;
 	width: 400px;
+	font-family: Helvetica, Arial, Sans-Serif;
+	color: yellow;
+	font-weight: bold;
 }
+/* selector for li elements*/
 li {
 	color: green;
 }
-
-
-
-
+/* selector for ul elements */
 ul {
 	list-style: square;
 	background-color: white;
 	margin: 10px;
 }
+/* selector for ol elements */
 ol {
 	list-style: upper-alpha;
 }
-body {
-	font-family: Helvetica, Arial, Sans-Serif;
-}
-body { 
-	color: yellow;
-	font-weight: bold;
-}
+/* selector for table elements */
 table {
 text-decoration: underline;
 }
+/* selector for table rows elements */
 tr {
 	text-decoration: overline;
 }
+/* selector for unvisited links */
 a:link {
 	color:red;
 }
+/* selector for links that have been visited */
 a:visited {
 	color:black;	
 }
+/* selector for hovering over the links */
 a:hover {
 	color:blue;
 }
+/* selector for links that are active */
 a:active {
 	color:green;
 }

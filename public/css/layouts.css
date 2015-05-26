@@ -1,36 +1,33 @@
-
+/* selector for the navigation elements */
 nav {
 	text-align: center;
 	display: inline;
 }
+/* selector for id="topnav" */
 #topnav {
-	
 }
+/* selector for hovering */
 a:hover{
 	color: black;
-}		
-body 	{
+}
+/* selector for the body element */
+body {
 background-color: rgb(225, 225, 225);
 }
-aside 	{
-	
-}
-img 	{
-
-}
+/* selector for class="home" */
 .home	{
 	color: blue;
 }
-.sidenav {
-
-}	
+/* selector for the footer elements */	
 footer {
 	text-align: center;
 	display: inline;
-}   
+} 
+/* selector for class="inline" and it children(li) */  
 .inline > li {
 	display: inline;
 }
+/* selector for class="container" */
 .container {
 	border: 3px solid yellow;
 }

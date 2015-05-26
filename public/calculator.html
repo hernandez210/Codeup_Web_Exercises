@@ -5,80 +5,90 @@
 	<link rel="stylesheet" type="text/css" href="css/calculator.css">
 </head>
 	<body>
-		<header>My Calculator</header>
-			
-	<form>
-		<input  id="leftbox" type="text" name="firstInteger" placeholder="firstnumber">
-		<input type="button" id="signs" name"signs" placeholder="Operation">
-		<input  id="second_box" type="text" name"secondInteger" placeholder="secondnumber">
-	</form>
+		<header>My Calculator</header>		
+			<form>
+				<input id="leftbox" type="text" name="firstInteger" placeholder="firstnumber">
+				
+				<input type="button" id="signs" name"signs" placeholder="Operation">
+				
+				<input  id="second_box" type="text" name"secondInteger" placeholder="secondnumber">
+			</form>
 		<div id="numbers">
-				<INPUT class="button" TYPE="button" NAME="one" value="1">  
-				<INPUT class="button" TYPE="button" NAME="two" value="2">  
-				<INPUT class="button" TYPE="button" NAME="three" value="3">
-				<INPUT class="button" TYPE="button" NAME="four" value="4">
-				<br>
-				<INPUT class="button" TYPE="button" NAME="five" value="5">  
-				<INPUT class="button" TYPE="button" NAME="six" value="6">  
-				<INPUT class="button" TYPE="button" NAME="seven" value="7"> <INPUT class="button" TYPE="button" NAME="eight" value="8"> 
-				<br>
-				<INPUT class="button" TYPE="button" NAME="nine" value="9">
-				<INPUT class="button" TYPE="button" NAME="zero" value="0">
-				<INPUT class="specialButton" TYPE="button" NAME="plus" value="+">
-				<INPUT class="specialButton" TYPE="button" NAME="minus" value="-">
-				<br>
-				<INPUT class="specialButton" TYPE="button" NAME="divide" value="/">
-				<INPUT class="specialButton" TYPE="button" NAME="multiple" value="*">
-				<INPUT class="specialButton" TYPE="button" NAME="equals" value="=">
-				<INPUT class="specialButton" id="clear" TYPE="button" NAME="clear" value="Clear">			
-		
+			<INPUT class="button" TYPE="button" NAME="one" value="1">  
+			
+			<INPUT class="button" TYPE="button" NAME="two" value="2">  
+			
+			<INPUT class="button" TYPE="button" NAME="three" value="3">
+			
+			<INPUT class="button" TYPE="button" NAME="four" value="4">
+			<br>
+			
+			<INPUT class="button" TYPE="button" NAME="five" value="5">  
+			
+			<INPUT class="button" TYPE="button" NAME="six" value="6">  
+			
+			<INPUT class="button" TYPE="button" NAME="seven" value="7"> 
+
+			<INPUT class="button" TYPE="button" NAME="eight" value="8"> 
+			<br>
+			
+			<INPUT class="button" TYPE="button" NAME="nine" value="9">
+			
+			<INPUT class="button" TYPE="button" NAME="zero" value="0">
+			<br>
+			
+			<INPUT class="specialButton" TYPE="button" NAME="plus" value="+">
+			
+			<INPUT class="specialButton" TYPE="button" NAME="minus" value="-">
+			<INPUT class="specialButton" TYPE="button" NAME="divide" value="/">
+			<INPUT class="specialButton" TYPE="button" NAME="multiple" value="*">
+			<INPUT class="specialButton" TYPE="button" NAME="equals" value="=">
+			<INPUT class="specialButton" id="clear" TYPE="button" NAME="clear" value="Clear">
+		</div>				
+<script src="js/jquery-2.1.4.min.js"></script>
 	<script>
-    "use strict";
+	    "use strict";
+	    // The variables are set here to hold a value
+			var leftbox = document.getElementById("leftbox").value;
+			var functions = document.getElementsByClassName("signs");
+			var second_box = document.getElementById("second_box").value;
+			var button = document.getElementsByClassName("button");
+			var specialButton = document.getElementsByClassName("specialButton");
+			// Here are the loops to check the clicks
+			var numberListener = function() {
+			    document.getElementById("leftbox").value += this.value;
+			}
+			var functionListener = function () {
+				document.getElementById("signs").value += this.value;
+			} 
+			var secondNumberListener = function () {
+				document.getElementById("second_box").value += this.value;
+			}; 
+			// This for loops are used to listen for the click for the math functions
+			for (var i = 0; i < button.length; i++) {
+			    button[i].addEventListener("click", numberListener);
+			}
+			for (var i = 0; i < specialButton.length; i++) {
+			    specialButton[i].addEventListener("click", functionListener);
+			}
+			for (var i = 0; i < button.length; i++) {
+			  	button[i].addEventListener("click", secondNumberListener);   
+					if (document.getElementById("signs").value == "+") {
 
-	var leftbox = document.getElementById("leftbox").value;
-	var functions = document.getElementsByClassName("signs");
-	var second_box = document.getElementById("second_box").value;
-	var button = document.getElementsByClassName("button");
-	var specialButton = document.getElementsByClassName("specialButton");
-	var numberListener = function() {
-	    document.getElementById("leftbox").value += this.value;
-	}
-	var functionListener = function () {
-		document.getElementById("signs").value += this.value;
-	} 
-	var secondNumberListener = function () {
-		document.getElementById("second_box").value += this.value;
-	}    
-	for (var i = 0; i < button.length; i++) {
-	    button[i].addEventListener("click", numberListener);
-	}
-	for (var i = 0; i < specialButton.length; i++) {
-	    specialButton[i].addEventListener("click", functionListener);
-	}
-	// for (var i = 0; i < button.length; i++) {
-	//     button[i].addEventListener("click", secondNumberListener);    
+					} 
+					if (document.getElementById("signs").value  == "-") {
 
-	if (document.getElementById("signs").value == "+") {
+					}
+					if (document.getElementById("signs").value == "*") {
 
-	} 
-	if (document.getElementById("signs").value  == "-") {
+					} 
+					if (document.getElementById("signs").value == "/") {
 
-	}
-	if (document.getElementById("signs").value == "*") {
+					} 
+					else {
+						console.log("neverseen")
+					}
 
-	} 
-	if (document.getElementById("signs").value == "/") {
-
-	} 
-	else {
-		console.log("neverseen")
-	}
-
-
-
-
-
-	</script>
-</body>
-
+		</script>
+	</body>
 </html>
