@@ -1,6 +1,5 @@
-
-// (function () {
-"use strict";
+(function () {
+	"use strict";
 // todo:
 // Create an array of objects that represent books.
 // Each book should have a title and an author.
@@ -19,24 +18,25 @@
     // console.log("Author: " + todo);
     // console.log("---");
 // end loop here
-var books = [{ 
-	"Title": "Tuesday with Murray",
-	"Author": {
+	var books = [{ 
+		"Title": "Tuesday with Murray",
+		"Author": {
 		"firstname": "Mitch",
 		"lastname" : "Alborn"
-}},
-{
-	"Title": "The Art of War",
-	"Author": {
+		}},
+		{
+		"Title": "The Art of War",
+		"Author": {
 		"firstname": "Sun", 
 		"lastname": "Tzu"
-}},
-{
-	"Title": "The Presidents",
-	"Author": {
+		}},
+		{
+		"Title": "The Presidents",
+		"Author": {
 		"firstname": "Dorris",
 		"lastName": "Kearn"
-}}]
+	}}];
+	
 	books.forEach (function (books, index){
 		console.log("books: " + "index+1";
 		console.log("Title: " + books.Title);
@@ -45,11 +45,6 @@ var books = [{
 
 
 });
- 
-//  for (var i = 0; books.length; i++) {
-// 	console.log("i" + " : " + books[i]);
-// }
-// });
 
 
 

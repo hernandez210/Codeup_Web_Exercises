@@ -1,14 +1,8 @@
 (function () {
-"use strict";
-	for (var i = 0; i < 10; i++) {
-    	console.log('for loop iteration #' + i);
-}
-	var response = prompt('What is your favorite color?');
+	"use strict";
+		var response = prompt('What is your favorite color?');
+		
+		for (var i = 0; i < 10; i++) {
+	    	console.log('for loop iteration #' + i);
+		};
 });
-
-// var i = 2;
-
-// while (i < 10) {
-//     console.log('while loop iteration #' * i);
-//     i++;
-// }

@@ -2,16 +2,14 @@
 	var_dump($_POST);
 ?>
 <!DOCTYPE HTML>
-	<html>
-		<head>
-			<title>My_fav_food</title>
-		</head>
-			<body>
-				<header>
-					<h1>
-						Tamales
-					</hi>
-				</header>
+<html>
+	<head>
+		<title>My_fav_food</title>
+	</head>
+		<body>
+			<header>
+				<h1>Tamales</hi>
+			</header>
 			<main>
 				<h2>Ingredients</h2>
 					 <ol>
@@ -28,12 +26,12 @@
 			</main>
 			<aside>
 				<h3>Others foods you may like</h3>
-				<ul>
-				<li>tortillas<a href="#" title="How to make Torillas"</a></li>
-				<li>carnitas<a href="#" title="how to eat meat"</a></li>
-				<li>salsa<a href="#" alt="hot_sauce"</a></li>
-				</ul>
+					<ul>
+						<li>tortillas<a href="#" title="How to make Torillas"</a></li>
+						<li>carnitas<a href="#" title="how to eat meat"</a></li>
+						<li>salsa<a href="#" alt="hot_sauce"</a></li>
+					</ul>
 			</aside>
-		</body>
-	</html>
+	</body>
+</html>
 

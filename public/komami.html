@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-   <html>
+<html>
     <head>
         <title>Komami</title>
         <link rel="stylesheet" type="text/css" href="#">
     </head>
     <body id="game">
-<script src="js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
             var konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
             var key = [];
             var counter = [];
@@ -16,13 +16,15 @@
                     console.log(event.keyCode);
                         if(konami.toString() == key.toString()) {
                             alert("30 lives you hit the correct code");
-                }};
-                if (key.push == konami.length) {
-                    console.log("great");
+            }};
+            
+            if (key.push == konami.length) {
+                    console.log("Great");
                 }   else {
-                    console.log("you made a mistake");
-                };
-                $("body").keyup(keylistener);
+                    console.log("You made a mistake");
+            };
+               
+            $("body").keyup(keylistener);
         </script>
     </body>
-  </html>
+</html>

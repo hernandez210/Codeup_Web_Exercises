@@ -1,0 +1,111 @@
+<!-- These are my class notes -->
+
+<!DOCTYPE HTML>
+  <html>
+    <head>
+        <title>May 18 Class Notes</title>
+        <script type="text/javascript" src="/js/jquert-2.1.4.min.js"></script>
+    </head>
+    <body>
+    <script src="js/jquery-2.1.4.min.js">
+    </script>
+	<script type="text/javascript">
+		$("tr").first().css("background-color", "salmon"); this will attack the first one on the list of table rows("tr").
+		
+		$("tr").last().css("background-color", "salmon"); this will attack the last one on the list of table rows("tr").
+		
+		$("tr").last().css("background-color", "salmon"); this will attack the last one on the list of table rows("tr").
+		
+		$("tr").children("td").first().css("background-color", "salmon"); this will attack the children of the table rows("tr").
+
+		To look at the parent you need to $("this").parent.hide();
+		$("this").parent.parent.hide();
+		This is to attack the parents of "tr"
+		$("this").parents("tr").hide();
+
+		when you console.log the ("parent")
+		when you console.log the ("parents")
+
+		The .each method is way of creating loops over elments using jQuery. 
+		The loop to strip every other  
+		$("tr").each(function(index, elment) {
+			$("elment").children().first().css("background-color", "magenta");
+		});
+		
+
+		$("tr").children("td").each(function(index) {
+			if (index % 3 == 0) {
+				$("this").css(" ");
+			
+			} else if (index % 3 == 1) {
+				$("this").css("")
+			
+			} else (
+				$("this").css("background-color", "salmon");
+		});
+
+			Event listener in jQuery ('#users-table').on("click", "delete-button", function())
+
+			Fading is called by using the syntax .fadeout(how long it takes, function() {
+				console.log("I am called")
+			});
+			$("this").parents("tr").fadeout(5000);
+
+			fade in is used calling the .fadein()
+
+			Animation $("#national-parks").click(function() {
+				$("#national-park"),animate({
+					left: "+=50",
+					opacity: "-=0.25"
+				}, 1000);
+			});
+			When working with the left top and bottom we have to set our style id that we are trying to target ex:"#id" to postion relative
+
+				$("#national-parks").click(function() {
+					$("#national-park").animate({
+						width: "+=100"
+					}, 1000).animate({
+						left: "+=100",
+						width: "-=100"
+					});
+				});
+5/19/2015
+	Today is Tuesday the 19th and we will review the animate method and then we will work on the simple simon game..
+		$("#btn-all").click(function() {
+            $("#animate-box")
+				letterSpacing: "+-15"
+         }, 2000);
+
+		div.animate({ width: "300"}, "slow");
+		div.animate({ height: "300"}, "slow");
+		div.animate({ : "300"}, "slow", startAnimation);
+
+		get the basic layout 
+		build div to contain the game
+		build the four squares for colors
+		
+
+		
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

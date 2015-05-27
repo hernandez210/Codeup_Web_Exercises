@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+   <html>
+    <head>
+        <title>jquery_faqs</title>
+        <link rel="stylesheet" type="text/css" href="#">
+        <style type="text/css">
+          #funfacts, #allbull {
+            display: ;
+          }
+        </style>
+    </head>
+    <body>
+        <h1 id="national">National Parks 10 FAQs</h1>
+        <dl id="questions">
+          <dt>What government agency oversees the parks?</dt>
+            <dd class="invisible">The Department of Interior</dd>
+          
+          <dt>How many employees work for the parks?</dt>
+            <dd class="invisible">Over 22,000</dd>
+          
+          <dt>how many parks?</dt>
+            <dd class="invisible">Over 407 areas</dd>
+          
+          <dt>Where is the smallest park?</dt>
+            <dd class="invisible">PA</dd>
+          
+          <dt>Where is the biggest park?</dt>
+            <dd class="invisible">AK</dd>
+          
+          <dt>How many people visit the parks per year?</dt>
+            <dd class="invisible">Almost 3 million</dd>
+          
+          <dt>Where can I find maps for the parks?</dt>
+            <dd class="invisible">Visit the specific parks website</dd>
+          
+          <dt>Where can I make camping reservations?</dt>
+            <dd class="invisible">you need to vist Recreation.com</dd>
+          
+          <dt>What do I need to go before visitng park?</dt>
+            <dd class="invisible">Check hours of operation</dd>
+          
+          <dt>What is the oldest national park?</dt>
+            <dd class="invisible">Yellow Stone</dd>
+        </dl>
+        
+        <h3 id="funfacts">Big Bend</h3>
+        <ul id="allbull">
+            <li>The grass is dead</li>
+            <li>The rain never stops</li>
+            <li>Some mountains have snow</li>
+            <li>The water is green</li>
+        </ul> 
+        <h3 id="funfacts">Choke Canyon</h3>
+        <ul id="allbull">
+            <li>This park is located in Africa</li>
+            <li>The dryest place on Earth</li>
+            <li>Many months of snow</li>
+            <li>The water is red</li>
+        </ul> 
+        <h3 id="funfacts">Davis Mountains</h3>
+        <ul id="allbull">
+            <li>This park has no mountains</li>
+            <li>The Amtrak trains stops here</li>
+            <li>All animals have three eyes</li>
+            <li>The water is yellow</li>
+        </ul>   
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script>
+            $(document).ready(
+                function() {
+                    $("#national").click(function (event) {
+                        $("dd").slideToggle(5000);
+                            console.log("testing")});
+                    
+                    $(".invisible")
+                        .css("border", "3px solid Yellow")
+                        .css("font-size", "25px");
+                    
+                    $("dt").css("border", "3px solid red");
+                    
+                    $("*").css("font-size", "25px");
+
+                    $("ul").each(function(index) {
+                        if (index >= 0) {
+                             $(this).children().first().css("font-weight", "bold");
+                    };
+                    
+                    $("#funfacts").click(function(event) {
+                        $("#allbull").slideToggle();
+                    });
+                    });
+                    });
+
+
+        
+                                           
+           
+        </script>
+    </body>
+  </html>

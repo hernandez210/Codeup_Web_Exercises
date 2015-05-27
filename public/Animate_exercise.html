@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animate</title>
+        <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+        <style>
+        /*This is used to style the whole html page and body*/
+            html, body {
+                margin: 0px;
+                padding: 0;
+            }
+        /*This is used to style the elements*/
+            #btn-animate {
+                margin: 15px;
+            }
+            .box {
+                background-color: #000033;
+                height: 250px;
+                margin: 15px;
+                position: relative;
+                width: 250px;
+            }
+            #btn-move {
+                font-size: 25px;    
+            }
+            #btn-disappear {
+                opacity: .5;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- This are the four buttons that the user will click -->
+    <p id="allbuttons">
+        <button id="btn-move">Move It</button>
+
+        <button id="btn-scale-down">Scale It</button>
+
+        <button id="btn-disappear">Disappear It</button>
+
+        <button id="btn-show">Show It</button>
+
+        <button id="btn-all">Animate all</button>
+    </p>
+    <div id="animate-box" class="box"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+    // Here the buttons get animated when the user clicks them//
+        'use strict';
+            $(document).ready(function() {
+                $("#btn-move").click(function() {
+                    console.log("btn-move")
+                    $("#animate-box")
+                        .animate({ left: "+=50"}, "fast")
+                });
+                // todo: Scale the width up by 50%
+                $("#btn-scale-down").click(function() {
+                    $("#animate-box")
+                        .animate({ width: "+=50px"}, 2000)
+                });
+
+                // todo: Use opacity to make the box invisible
+                $("#btn-disappear").click(function() {
+                    $("#animate-box")
+                        .animate({ opacity: "0"}, "slow")
+                        .animate({ height: "0"}, 5000)
+                });
+
+                // todo: Make the box appear again with opacity
+                $("#btn-show").click(function() {
+                    $("#animate-box")
+                        .animate({ opacity: "100"})
+                        .animate({ height: "500"}, 3000)
+                });
+                $("#btn-all").click(function() {
+                    $(this)
+                        .css("background-color", "red")
+                });
+                $("#btn-move").click(function() {
+                    $(this)
+                        .css("background-color", "green")
+                        .css("width", "250px")
+                });
+                $("#btn-scale-down").click(function() {
+                    $(this)
+                        .css("width", "300px")
+                        .css("height", "50px")
+                });
+
+                // todo: Once all is done see if you can chain all the animations
+                // to happen with the `Animate all` button.
+                $("#btn-all").click(function() {
+                    $("#animate-box")
+                        .animate({ left: "+=50"})
+                        .animate({ width: "+=50"}, 4000)
+                        .animate({ opacity: "0"}, 3000)
+                        .animate({ opacity: "100"})
+                        .animate({ height: "1000"}, 3000)
+                });
+    // Refresh to start over before hitting the button.
+                $("#btn-all").click(function() {
+                    $("#animate-box")
+                        .css("background-color", "red")
+                });
+                $("#allbuttons")
+                    .css("border", "3px solid")
+                    .css("background-color", "salmon")
+            }); 
+        
+    </script>
+</body>
+</html>

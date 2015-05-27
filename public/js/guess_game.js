@@ -1,5 +1,5 @@
-// (function () {
-// "use strict";
+(function () {
+"use strict";
 
 	var again = confirm("You WON!!!!! Want to play again?");
 	var random = Math.floor((Math.random()*10)+1);
@@ -7,8 +7,8 @@
 	alert("Let\s play a game");
 
 	do {
-		  console.log("while loop iteration # " + prompt);
-		  response++;
+	 	console.log("while loop iteration # " + prompt);
+		response++;
 	// while (response != random) {
 		console.log("Try again!!!!");
 		if (response < random) {
@@ -23,6 +23,6 @@
 	//     alert("Ok see you soon.");
 		}
 		response = prompt('Pick a number from 1-10?');
-// });
+});
 
 

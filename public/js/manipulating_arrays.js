@@ -1,10 +1,11 @@
-// (function () {
+(function () {
+	"use strict";
 
 // todo:
 // Create an array holding the names of the planets of our solar system (in order, starting closest to the sun).
-var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus"];
-	function logPlanets() {
-	    console.log('Here is the list of planets:');
+	var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus"];
+		function logPlanets() {
+	    	console.log('Here is the list of planets:');
 	    	console.log(planets);
 }
 		console.log('Adding "The Sun" to the beginning of the planets array.');

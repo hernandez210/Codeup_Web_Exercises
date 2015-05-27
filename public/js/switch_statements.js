@@ -1,4 +1,4 @@
-// (function () { 
+(function () { 
     "use strict";
 // ignore these lines for now
 // just know that the variable 'color' will end up with a random value from the colors array
@@ -24,6 +24,6 @@ switch (color) {
         break;
     default:
        message = "I know nothing those colors.";
-};
+}});
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-	<html>
+<html>
 	<head>
 		<title>Maps</title>
 			<style type="text/css">
@@ -11,34 +11,37 @@
 	</head>
 	<body>
 		<div id="map-canvas"></div>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCtibGbjcuEZialyk0sccC944HUpG2bC0">
-		</script>
-		<script type="text/javascript">
-		  <!-- Script to show address on map -->
-		 	var mapOptions = {
+		
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCtibGbjcuEZialyk0sccC944HUpG2bC0">
+	</script>
+	<script type="text/javascript">
+	(function () {
+		"use strict";
+		  // <!-- Script to show address on map -->
+		 var mapOptions = {
 		      	zoom: 18,
 		      	center: { lat: 29.4284595, lng:  -98.492433 }
 		};
-		    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions); 
+	    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions); 
 			
-			var geoCallback = function(results, status) {
-				console.log("this");
-					if (status == google.maps.GeocoderStatus.OK) {
-						var marker = new google.maps.Marker({
-							position: results[0].geometry.location,
-							map: map
-						});
-					} else {
-						alert("Geocoding was not successful - STATUS: " + status);
-					}};
+		var geoCallback = function(results, status) {
+			console.log("this");
+				if (status == google.maps.GeocoderStatus.OK) {
+					var marker = new google.maps.Marker({
+						position: results[0].geometry.location,
+						map: map
+				});
+				} else {
+					alert("Geocoding was not successful - STATUS: " + status);
+		}};
 		    // Render the map
-		    var locations = [{
-		    	address: "18318 Sonterra place, San Antonio, Texas, 78258",
-		    	callback: geoCallback
-		    }, {
-		    	address: "1126 East Houston st., San Antonio, Texas, 78205",
-		    	callback: geoCallback 
-		    }];
+		var locations = [{
+		    address: "18318 Sonterra place, San Antonio, Texas, 78258",
+		   	callback: geoCallback
+		}, {
+		   	address: "1126 East Houston st., San Antonio, Texas, 78205",
+		   	callback: geoCallback 
+		}];
 
 		 // 	var chamadres = "18318 Sonterra place, San Antonio, Texas, 78258";
 		 // 	var chami = { lat: 29.6101908, lng: -98.49775979999998};
@@ -46,7 +49,7 @@
 		 // 	var spaghetti = { lat: 29.425088, lng: -98.479711};
 		 // 	var chilaquil = { lat: 29.424950, lng: -98.490887};
  		//  	// Init geocoder object
-			var geocoder = new google.maps.Geocoder();
+		var geocoder = new google.maps.Geocoder();
 			// // Geocode our address
 			geocoder.geocode( { "address": locations}, function(results, status) {
 			  // Check for a successful result
@@ -57,7 +60,7 @@
 			      zoom: 10,
 			      // This sets the center of the map at our location
 			      center: results[0].geometry.location
-			    };
+			    }}};
 			// //     // Render the map
 			var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 			// //     // Add the marker to our existing map
@@ -113,11 +116,11 @@
 					
 					})
 				});
+			});
 
 
 
 
-		  </script>
-</body>
-
-	</html>
+		</script>
+	</body>
+</html>

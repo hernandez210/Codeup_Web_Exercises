@@ -9,19 +9,15 @@
 // declare and initialize array
 		var names = ['chido', 'felipe', 'pancho', 'sabro'];
 		// There are 4 shapes in the array
-		console.log('There are ' + names.length + ' names in the array');
-
+			console.log('There are ' + names.length + ' names in the array');
 		// The first name is:
-		console.log('The first name is: ' + names[0]);
-
+			console.log('The first name is: ' + names[0]);
 		// The second name is: 
-		console.log('The second name is: ' + names[1]);
-
+			console.log('The second name is: ' + names[1]);
 		// The third name is: 
-		console.log('The third name is: ' + names[2]);
-
+			console.log('The third name is: ' + names[2]);
 		// The fourth name is: 
-		console.log('The fourth name is: ' + names[3]);
+			console.log('The fourth name is: ' + names[3]);
 
 });
 
