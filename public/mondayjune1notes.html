@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+<body>
+Creating a JSON Object 
+
+function handleajax(data) {
+	console.log(data);
+};
+
+$.ajax("/objects.json", {
+		type: "GET"
+	}).done(handleajax).fail(function () {
+		alert("ajax request failed");
+		.always(function() {
+		console.log("")
+	})
+		console.log(data);
+
+});
+
+
+$.ajax("/objects.json", {
+	type: "GET"
+}).done(function(data) {
+	console.log(data);
+});
+
+There a delay when you make a request and then it loads on page. The .done method is basically an event that fires when the ajax rrequest is finished. The data in the function parameter is used to give a name to the information that is coming backj from the request. In this case the name that was used is data because data is what is being returned. 
+
+$.get("/objects.json").done(funciton(data) {
+	console.log(data);
+});
+
+**********Notes for the Weather API**********
+This the simplest form of making a request using an ajax object
+$.get("http://api.openweathermap.org/data/2.5/weather", {
+    APPID: "467fce2fbe4d967cacd8c8886374905a",
+    q:     "San Antonio, TX",
+    units: "imperial"
+}).done(function() {
+	var iconURL = "http//:openweathermap.org/img/w " + data.weather[0].icon + ".png";
+
+	$(#weatherIcon).attr("src", iconURL);
+});
+This is a second request for the future forecast daily
+$.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+    APPID: "467fce2fbe4d967cacd8c8886374905a",
+    q:     "San Antonio, TX",
+    units: "imperial"
+}).done(function(data) {
+	console.log(data)
+});
+The uix epoc was jan 1, 1970
+
+use forecast.io
+
+
+
+.attribute or .attr() call 
+<img src="" id="icon"
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Class Notes for june 2</title>
+</head>
+<body>
+Arrays are met to use loops to travers
+The most basic simpliest loop we have is a while loope EX:
+	var i = 0;
+	while (i < data.length) {
+	console.log(data.list[i]);
+	i++; you have to remember to increment i.
+}
+The next loop is the for loop EX:
+for (var i = 0; i < data.list.length; i++) {
+	console.log(data.list[i]);
+}
+the pros and cons to much things can be forgotten for loops are more like a fill in the blank all the same pieces as the while loop just moved them around. 
+
+The next loop is .foreach EX:
+data.list.forEach(function (dayilyForecast) { 
+	console.log(day);
+	
+});
+	is the best is the .forEach loop. 
+	the downside is that you can only use it to scan thru arrays
+
+The last loop is a loop using jQuery
+$(data.list).each(function (index, day) {
+	console.log(day)
+});	
+The downside is that you need jQUERY library
+You have to add two parameter to work
+
+
+The plan for tonight
+1.finish three day weather forecast
+2.finish search 
+	notes for the search part of the assignment
+		<form>
+			<input type="text" id="search">
+			<input type="submit">
+		</form>
+
+
+		$("search-form").submit(function (e) {
+		e.preventDefault();
+		var cityName = $("#search").val();
+		}) 	
+3.finish map
+4.find drop pin
+5.check for geolocation
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

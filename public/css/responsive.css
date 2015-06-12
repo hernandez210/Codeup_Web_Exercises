@@ -1,0 +1,51 @@
+/* screen sizes under 500px and global stuff */
+
+h1 {
+	color: red;
+
+}
+
+div {
+	margin: 20px;
+	width: 80%;
+	float: left;
+}
+
+.firstDiv {
+	background-color: red;
+}
+
+.secondDiv {
+	background-color: blue;
+}
+
+.thirdDiv {
+	background-color: yellow;
+}
+
+.fourthDiv {
+	background-color: salmon;
+}
+
+.fifthDiv {
+	background-color: pink;
+}
+
+div:nth-child(1) {
+	background-color: yellow;
+}
+
+
+/* screen sizes 550px and up */
+@media screen and (min-width:550px) {
+	div {
+        width: 30%;
+    }
+}
+
+/* screen sizes 880px and up */
+@media screen and (min-width:880px) {
+    div {
+        width: 25%;
+    }
+}
