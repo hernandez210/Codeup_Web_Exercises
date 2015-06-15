@@ -2,6 +2,7 @@
 
 h1 {
 	color: red;
+	text-align: center;
 
 }
 
@@ -35,6 +36,7 @@ div:nth-child(1) {
 	background-color: yellow;
 }
 
+/*Media breakpoints */
 
 /* screen sizes 550px and up */
 @media screen and (min-width:550px) {

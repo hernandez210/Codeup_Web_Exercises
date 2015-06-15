@@ -35,16 +35,3 @@ header {
 header> ol > li { 
 	display: inline;
 }
-/* screen sizes 550px and up */
-@media screen and (min-width:550px) {
-    body > div {
-        width: 30%;
-    }
-}
-
-/* screen sizes 880px and up */
-@media screen and (min-width:880px) {
-    body > div {
-        width: 25%;
-    }
-}
